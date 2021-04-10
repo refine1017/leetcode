@@ -1,2 +1,2 @@
 # LeetCode
-采用Visual Stduio Code的LeetCode插件刷题
+采用Visual Studio Code的LeetCode插件刷题
