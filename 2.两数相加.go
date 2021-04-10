@@ -1,10 +1,17 @@
-package add_two_numbers
+/*
+ * @lc app=leetcode.cn id=2 lang=golang
+ *
+ * [2] 两数相加
+ */
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
+// @lc code=start
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	node1 := l1
 	node2 := l2
@@ -13,7 +20,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	node := root
 	tenFlag := 0
 
-	for (true) {
+	for true {
 		var v1, v2 = 0, 0
 		if node1 != nil {
 			v1 = node1.Val
@@ -42,3 +49,6 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 
 	return root
 }
+
+// @lc code=end
+
